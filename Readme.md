@@ -11,9 +11,9 @@ promise from resolving/rejecting.
 Just use your favorite package manager to install.
 
 ```bash
-npm install @durandj/cancellable
-yarn add @durandj/cancellable
-pnpm install @durandj/cancellable
+npm install @theisleoffavalon/cancellable
+yarn add @theisleoffavalon/cancellable
+pnpm install @theisleoffavalon/cancellable
 ```
 
 ## Basic Usage
@@ -73,7 +73,7 @@ import React, {
     useState,
 } from 'react';
 
-import { Cancellable } from '@durandj/cancellable';
+import { Cancellable } from '@theisleoffavalon/cancellable';
 
 const NameList: FunctionComponent = (): ReactElement => {
     const [ names, setNames ] = useState([]);
@@ -125,7 +125,7 @@ import React, {
     useState,
 } from 'react';
 
-import { Cancellable } from '@durandj/cancellable';
+import { Cancellable } from '@theisleoffavalon/cancellable';
 
 const NameList: FunctionComponent = (): ReactElement => {
     const [ names, setNames ] = useState([]);
