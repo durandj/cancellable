@@ -1,0 +1,30 @@
+name: Continuous Integration
+
+on:
+  - push
+
+jobs:
+  branch:
+    name: Run branch checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 13.3.0
+
+      - name: Install pnpm
+        run: |
+          npm install --global pnpm
+
+      - name: Install dependencies
+        run: |
+          pnpm install
+
+      - name: Lint code
+        run: |
+          pnpm run Lint
+
+      - name: Run tests
+        run: |
+          pnpm run test

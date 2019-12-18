@@ -1,0 +1,43 @@
+{
+  "name": "@durandj/cancellable",
+  "version": "0.0.0",
+  "description": "Cancellable promises",
+  "author": "James Durand",
+  "license": "MIT",
+  "homepage": "https://github.com/durandj/cancellable#readme",
+  "bugs": {
+    "url": "https://github.com/durandj/cancellable/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/durandj/cancellable.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.ts",
+    "test": "ts-mocha --paths src/**/*.spec.ts",
+    "test:watch": "pnpm run test -- --watch"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^5.2.7",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
+    "@typescript-eslint/typescript-estree": "^2.12.0",
+    "babel-eslint": "^10.0.3",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-node": "^0.3.2",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "mocha": "^6.2.2",
+    "rimraf": "^3.0.0",
+    "ts-mocha": "^6.0.0",
+    "typescript": "^3.7.3"
+  }
+}

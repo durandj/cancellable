@@ -1,0 +1,8 @@
+{
+    "extension": [
+        "ts"
+    ],
+    "require": [
+        "./src/testSetup.ts"
+    ]
+}
