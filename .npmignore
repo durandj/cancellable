@@ -1,0 +1,12 @@
+.pnpm-store
+.editorconfig
+.eslintignore
+.eslintrc.json
+.github
+.mocharc.jsonc
+.node-version
+.vscode
+tsconfig.build.json
+tsconfig.json
+
+!dist
