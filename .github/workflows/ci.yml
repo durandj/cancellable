@@ -11,7 +11,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v1
         with:
-          node-version: 13.3.0
+          node-version: 13.4.0
 
       - name: Install pnpm
         run: |
