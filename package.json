@@ -38,7 +38,11 @@
     "eslint-plugin-import": "^2.19.1",
     "mocha": "^6.2.2",
     "rimraf": "^3.0.0",
+    "semantic-release": "^15.13.31",
     "ts-mocha": "^6.0.0",
     "typescript": "^3.7.3"
+  },
+  "release": {
+    "branch": "master"
   }
 }
