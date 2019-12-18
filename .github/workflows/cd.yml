@@ -1,11 +1,13 @@
-name: Continuous Integration
+name: Continuous Delivery
 
 on:
-  - push
+  push:
+    branches:
+      - master
 
 jobs:
-  branch:
-    name: Run branch checks
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Install Node
@@ -31,3 +33,11 @@ jobs:
       - name: Run tests
         run: |
           pnpm run test
+
+      - name: Release new version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          pnpm run build
+          pnpx semantic-release
