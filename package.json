@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/durandj/cancellable.git"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prebuild": "pnpm run clean",
     "build": "tsc --build tsconfig.build.json",
